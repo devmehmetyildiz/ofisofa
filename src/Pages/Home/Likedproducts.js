@@ -22,7 +22,7 @@ export default function Likedproducts() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className='px-4 mt-4 text-center text-[#7F85A8] font-normal text-lg'>Müşterilerimiz tarafından en beğenilen ürünler</motion.p>
+        className='px-4 mt-4 text-center text-[#4B85555] font-normal text-lg'>Müşterilerimiz tarafından en beğenilen ürünler</motion.p>
 
       <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-[5%] '>
         {productshuffled.slice(0, 3).map(item => {

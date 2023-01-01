@@ -39,7 +39,7 @@ export default function Popularproducts() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className='mt-4 text-center text-[#7F85A8] font-normal text-lg'>En beğenilir Modellerimiz</motion.p>
+          className='mt-4 text-center text-[#4B85555] font-normal text-lg'>En beğenilir Modellerimiz</motion.p>
 
       </div>
       <div className='mt-8 flex flex-col justify-center items-center w-full px-[5%]'>
@@ -52,7 +52,7 @@ export default function Popularproducts() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 onClick={() => { setcategory(item) }}
-                className="cursor-pointer py-4 px-8 flex items-center justify-center border-b-2 border-solid border-[#e9ecef #e9ecef #dee2e6] hover:border-[#FD8F5F]">
+                className="cursor-pointer py-4 px-8 flex items-center justify-center border-b-2 border-solid border-[#e9ecef #e9ecef #dee2e6] hover:border-[#1C5727]">
                 {item}
               </motion.div>
             </div>
