@@ -1,8 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img from "../../Assets/img"
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
+import Slider from 'react-slick';
+import productimages from '../../Assets/productimages';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function Portfolio() {
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  }
+  const [imageloaded, setimageloaded] = useState(false)
+  const slideritems = [
+    {
+      Id: 2,
+      img: productimages.sliderimg1,
+      title: "B PROJEMİZ"
+    },
+    {
+      Id: 1,
+      img: productimages.sliderimg2,
+      title: "A PROJEMİZ"
+    },
+    {
+      Id: 3,
+      img: productimages.sliderimg3,
+      title: "C PROJEMİZ"
+    },
+
+  ]
+
   return (
     <div className=' relative w-full flex justify-center items-center bg-[#F2E1D9] h-[100vh]'>
       <img className='absolute top-0 left-0' src={img.Home_slider} alt="slider" />
@@ -22,4 +55,20 @@ export default function Portfolio() {
       </div>
     </div>
   )
+}
+
+
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <></>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <></>
+  );
 }

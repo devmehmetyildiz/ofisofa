@@ -35,7 +35,7 @@ export default function Header(props) {
   const linkClass = "mx-8 transition-all ease-in-out duration-500 text-md font-bold hover:text-[#FD8F5F] "
   return (
     <React.Fragment>
-      <div className='w-full h-[85px] bg-[#F2E1D9] flex justify-center items-center relative'>
+      <div className='w-full h-[85px] bg-[#F2E1D9] flex justify-center items-center relative z-50'>
         <div className=' w-full flex flex-row justify-around items-center'>
           <div className='hidden lg:flex flex-row justify-center items-center'>
             <Link className={`${linkClass}  ${location.pathname === "/" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/', state: { from: location.pathname } }}>ANASAYFA</Link>
@@ -44,7 +44,7 @@ export default function Header(props) {
             <Link className={`${linkClass}  ${location.pathname === "/Contact" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Contact', state: { from: location.pathname } }} >İLETİŞİM</Link>
           </div>
           <div className='relative border-b-[1px] border-b-solid border-[#C2B6BB]'>
-            <input className=' bg-[#F2E1D9] outline-none text-lg mr-4' placeholder='Search Products'></input>
+            <input className=' bg-[#F2E1D9] outline-none text-lg mr-4' placeholder='Ürün Arayın'></input>
             <AiOutlineSearch className='absolute -right-5 top-0 text-2xl text-[#010A44]' />
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function Header(props) {
                 <Link className={`${linkClass}  ${location.pathname === "/Contact" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Contact', state: { from: location.pathname } }} >İletişim</Link>
               </div>
               <div className='relative border-b-[1px] border-b-solid border-[#C2B6BB]'>
-                <input className=' bg-[#F2E1D9] outline-none text-lg mr-4' placeholder='Search Products'></input>
+                <input className=' bg-[#F2E1D9] outline-none text-lg mr-4' placeholder='Ürün Arayın'></input>
                 <AiOutlineSearch className='absolute -right-5 top-0 text-2xl text-[#010A44]' />
               </div>
             </div>

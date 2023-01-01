@@ -18,8 +18,14 @@ import yenimasatakim1_2 from "./yeni masa takımı 1_02.jpg"
 import yenimasatakim2_1 from "./yeni masa takımı 2_01.jpg"
 import yenimasatakim2_2 from "./yeni masa takımı 2_02.jpg"
 import yenimasatakim2_3 from "./yeni masa takımı 2_03.jpg"
+import sliderimg1 from "./sliderimg1.png"
+import sliderimg2 from "./sliderimg2.png"
+import sliderimg3 from "./sliderimg3.png"
 
 export default {
+    sliderimg1,
+    sliderimg2,
+    sliderimg3,
     artemismasatakim1,
     artemismasatakim2,
     classmasatakim1,

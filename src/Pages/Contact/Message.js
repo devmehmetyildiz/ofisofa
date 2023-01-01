@@ -26,22 +26,23 @@ export default function Message() {
               <div className='flex flex-row justify-start items-center w-full my-4'>
                 <CiHome className='mr-8 text-4xl text-[#7F85A8]' />
                 <div className='flex flex-col justify-center items-start'>
-                  <h1 className='text-[#2a2a2a] font-semibold'>Buttonwood, California.</h1>
-                  <h2 className='text-[#7F85A8]'>Rosemead, CA 91770</h2>
+                  <h1 className='text-[#2a2a2a] font-semibold'>Mücahitler Mahallesi 52075.Sokak </h1>
+                  <h1 className='text-[#2a2a2a] font-semibold'> Kuğu Apartmanı No: 12/A </h1>
+                  <h2 className='text-[#7F85A8]'>Şehitkamil/Gaziantep</h2>
                 </div>
               </div>
               <div className='flex flex-row justify-start items-center w-full my-4'>
                 <CiMobile4 className='mr-8 text-4xl text-[#7F85A8]' />
                 <div className='flex flex-col justify-center items-start'>
-                  <h1 className='text-[#2a2a2a] font-semibold'>+1 253 565 2365</h1>
-                  <h2 className='text-[#7F85A8]'>Mon to Fri 9am to 6pm</h2>
+                  <h1 className='text-[#2a2a2a] font-semibold'>0 (530) 364 8963</h1>
+                  <h2 className='text-[#7F85A8]'>7/24 Her zaman</h2>
                 </div>
               </div>
               <div className='flex flex-row justify-start items-center w-full my-4'>
                 <AiOutlineMail className='mr-8 text-4xl text-[#7F85A8]' />
                 <div className='flex flex-col justify-center items-start'>
-                  <h1 className='text-[#2a2a2a] font-semibold'>support@colorlib.com</h1>
-                  <h2 className='text-[#7F85A8]'>Send us your query anytime!</h2>
+                  <h1 className='text-[#2a2a2a] font-semibold'>info@ofisofa.com</h1>
+                  <h2 className='text-[#7F85A8]'>Her zaman bize ulaşabilirsiniz!</h2>
                 </div>
               </div>
             </div>
