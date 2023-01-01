@@ -35,7 +35,7 @@ export default function Benefits() {
 
   return (
     <div className='mt-12 bg-[#71A37A] '>
-      <div className='py-8 flex flex-row justify-center items-center gap-10'>
+      <div className='py-8 flex flex-col lg:flex-row justify-center items-center gap-10'>
         {benefist.map(item => {
           return <div key={Math.random()} className="overflow-hidden">
             <motion.div

@@ -68,6 +68,11 @@ span {
   width: 100%;
 }
 
+.navbarinput::placeholder{
+color: #2d2d2d;
+}
+
+
 
 .titlebg{
   background-image: url("Assets/img/TitleBg.webp");

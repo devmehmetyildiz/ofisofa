@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Portfolio from "./Portfolio"
 import Popularproducts from "./Popularproducts"
 import About from "./About"
@@ -7,7 +7,12 @@ import Socialmedia from "../Utils/Socialmedia"
 import Topproducts from "./Topproducts"
 import Benefits from "../Utils/Benefits"
 
-export default function index() {
+export default function Index() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <React.Fragment>
             <Portfolio />

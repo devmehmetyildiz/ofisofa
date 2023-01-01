@@ -25,7 +25,7 @@ export default function Popularproducts() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className='font-bold uppercase text-center text-4xl'>POPULAR PRODUCTS</h1>
+          className='font-bold uppercase text-center text-4xl'>POPÜLER ÜRÜNLER</h1>
       </div>
       <div className='overflow-hidden'>
         <motion.p
@@ -33,7 +33,7 @@ export default function Popularproducts() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className='mt-4 text-center text-[#4B85555] font-normal text-lg'>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</motion.p>
+          className='mt-4 text-center text-[#4B85555] font-normal text-lg'>En beğenilir Modellerimiz</motion.p>
 
       </div>
       <div className='mt-8 flex flex-col justify-center items-center w-full px-[5%]'>
