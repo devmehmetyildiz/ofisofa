@@ -9,26 +9,26 @@ export default function Benefits() {
   const benefist = [
     {
       icon: <TbTruckDelivery />,
-      title: 'Fast & Free Delivery',
-      info: 'Free delivery on all orders',
+      title: 'Hızlı & Ücretsiz* Dağıtım',
+      info: 'Gaziantep içi ücretsiz dağıtım',
       duration: 0.7
     },
     {
       icon: <MdOutlinePayment />,
-      title: 'Secure Payment',
-      info: 'Free delivery on all orders',
+      title: 'Taksit Seçenekleri',
+      info: 'Her Banka ile antlaşmalı',
       duration: 1.0
     },
     {
       icon: <CiMoneyCheck1 />,
-      title: 'Money Back Guarantee',
-      info: 'Free delivery on all orders',
+      title: 'Mail Order ile Güvenli Ödeme',
+      info: 'Uzaktan Ödeme İmkanı',
       duration: 1.3
     },
     {
       icon: <BiSupport />,
-      title: 'Online Support',
-      info: 'Free delivery on all orders',
+      title: '7/24 Destek',
+      info: 'Her an yanınızdayız',
       duration: 1.6
     },
   ]

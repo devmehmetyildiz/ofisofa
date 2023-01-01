@@ -6,7 +6,7 @@ import Benefits from "../Utils/Benefits"
 export default function index() {
     return (
         <React.Fragment>
-            <Title title={"Products"} titleurl="/Products" />
+            <Title title={"Ürünler"} titleurl="/Products" />
             <Popularproducts />
             <Benefits />
         </React.Fragment>

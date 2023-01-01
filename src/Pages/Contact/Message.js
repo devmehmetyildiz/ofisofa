@@ -7,19 +7,19 @@ export default function Message() {
     <div className='w-full flex justify-center items-center mb-12'>
       <div className='w-2/3'>
         <div className='flex flex-col justify-start items-start'>
-          <h1 className='font-bold text-xl text-black mt-4'>Get in Touch</h1>
+          <h1 className='font-bold text-xl text-black mt-4'>Bizimle İletişime Geç</h1>
           <div className='flex flex-row justify-between items-center w-full mt-4'>
             <div className='flex flex-col justify-center items-center w-2/3'>
-              <textarea placeholder='Enter Message' className='forminput outline-none border-[1px] border-gray-300 border-solid rounded-lg !w-full' rows="5"></textarea>
+              <textarea placeholder='Mesajınızı Yazınız' className='forminput outline-none border-[1px] border-gray-300 border-solid rounded-lg !w-full' rows="5"></textarea>
               <div className='mt-4 flex flex-row justify-center items-center w-full'>
-                <input placeholder='Enter Your Name' className='forminput py-2 mr-4 w-full rounded-md border-[1px] border-solid border-gray-300'></input>
+                <input placeholder='İsminizi Giriniz' className='forminput py-2 mr-4 w-full rounded-md border-[1px] border-solid border-gray-300'></input>
                 <input placeholder='E-mail' className='forminput py-2 w-full rounded-md border-[1px] border-solid border-gray-300'></input>
               </div>
               <div className='mt-4 flex flex-row justify-center items-center w-full'>
-                <input placeholder='Enter Subject' className='forminput py-2 w-full rounded-md border-[1px] border-solid border-gray-300'></input>
+                <input placeholder='Konu Giriniz' className='forminput py-2 w-full rounded-md border-[1px] border-solid border-gray-300'></input>
               </div>
               <div className='mt-4 flex flex-row justify-start items-start w-full'>
-                <button className='button rounded-lg'>Send</button>
+                <button className='button rounded-lg'>Gönder</button>
               </div>
             </div>
             <div className='flex flex-col justify-start items-start '>

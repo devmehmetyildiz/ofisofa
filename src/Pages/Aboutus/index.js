@@ -7,7 +7,7 @@ import Socialmedia from "../Utils/Socialmedia"
 export default function index() {
     return (
         <React.Fragment>
-            <Title title={"About"} titleurl="/Aboutus" />
+            <Title title={"Hakkımızda"} titleurl="/Aboutus" />
             <About />
             <Socialmedia />
             <Benefits />

@@ -1,38 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img from '../../Assets/img'
 import { motion } from "framer-motion"
+import products from "../../Assets/products"
 export default function Popularproducts() {
 
+
   const categories = [
-    'Sofa',
-    'Table',
-    'Chair',
-    'Bed',
-    'Lighting',
-    'Decore',
+    'Masa Takımı',
+    'BOŞ',
+    'BOŞ',
+    'BOŞ',
+    'BOŞ',
+    'BOŞ',
   ]
 
-  const products = [
-    {
-      img: img.Popularproduct1,
-      title: 'Bly Microfiber / Microsuede 56" Armless Loveseat',
-      price: '367',
-      duration: 0.5
-    },
-    {
-      img: img.Popularproduct2,
-      title: 'Bly Microfiber / Microsuede 56" Armless Loveseat',
-      price: '367',
-      duration: 1.0
-    },
-    {
-      img: img.Popularproduct3,
-      title: 'Bly Microfiber / Microsuede 56" Armless Loveseat',
-      price: '367',
-      duration: 1.5
-    },
-
-  ]
+  const [category, setcategory] = useState(categories[0])
 
   const frame_toup = {
     initial: { y: 80 },
@@ -49,7 +31,7 @@ export default function Popularproducts() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className='font-bold uppercase text-center text-4xl'>POPULAR PRODUCTS</motion.h1>
+          className='font-bold uppercase text-center text-4xl'>Popüler Ürünler</motion.h1>
       </div>
       <div className='overflow-hidden'>
         <motion.p
@@ -57,7 +39,7 @@ export default function Popularproducts() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className='mt-4 text-center text-[#7F85A8] font-normal text-lg'>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</motion.p>
+          className='mt-4 text-center text-[#7F85A8] font-normal text-lg'>En beğenilir Modellerimiz</motion.p>
 
       </div>
       <div className='mt-8 flex flex-col justify-center items-center w-full px-[5%]'>
@@ -69,6 +51,7 @@ export default function Popularproducts() {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                onClick={() => { setcategory(item) }}
                 className="cursor-pointer py-4 px-8 flex items-center justify-center border-b-2 border-solid border-[#e9ecef #e9ecef #dee2e6] hover:border-[#FD8F5F]">
                 {item}
               </motion.div>
@@ -77,7 +60,7 @@ export default function Popularproducts() {
         </div>
       </div>
       <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-[5%] '>
-        {products.map(item => {
+        {products.filter(u => u.category === category).length > 0 ? products.filter(u => u.category === category).slice(0, 3).map(item => {
           return <div key={Math.random()} className="overflow-hidden">
             <motion.div
               initial={{ y: 180, opacity: 0 }}
@@ -85,12 +68,13 @@ export default function Popularproducts() {
               viewport={{ once: true }}
               transition={{ duration: item.duration }}
               className="p-4 flex flex-col justify-center items-center border-[1px] border-solid border-[#F6F8FE]">
-              <img className='h-[250px]' src={item.img} alt={item.title} />
-              <h1 className='mt-4 font-bold leading-[1.7]'>{item.title}</h1>
+              <img className='h-[250px]' src={item.imgs[0]} alt={item.title} />
+              <h1 className='mt-4 font-bold leading-[1.7]'>{item.product}</h1>
+              <h1 className='mt-4 font-bold leading-[1.7]'>{item.info}</h1>
               <p className='font-semibold text-red-800 my-4'>${item.price}</p>
             </motion.div>
           </div>
-        })}
+        }) : <div className="w-full text-center flex justify-center items-center"><h1>Ürün Bulunamadı</h1></div>}
       </div>
     </div >
   )

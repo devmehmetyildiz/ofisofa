@@ -38,10 +38,10 @@ export default function Header(props) {
       <div className='w-full h-[85px] bg-[#F2E1D9] flex justify-center items-center relative'>
         <div className=' w-full flex flex-row justify-around items-center'>
           <div className='hidden lg:flex flex-row justify-center items-center'>
-            <Link className={`${linkClass}  ${location.pathname === "/" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/', state: { from: location.pathname } }}>Home</Link>
-            <Link className={`${linkClass}  ${location.pathname === "/Products" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Products', state: { from: location.pathname } }} >Products</Link>
-            <Link className={`${linkClass}  ${location.pathname === "/Aboutus" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Aboutus', state: { from: location.pathname } }} >Aboutus</Link>
-            <Link className={`${linkClass}  ${location.pathname === "/Contact" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Contact', state: { from: location.pathname } }} >Conctact</Link>
+            <Link className={`${linkClass}  ${location.pathname === "/" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/', state: { from: location.pathname } }}>ANASAYFA</Link>
+            <Link className={`${linkClass}  ${location.pathname === "/Products" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Products', state: { from: location.pathname } }} >ÜRÜNLER</Link>
+            <Link className={`${linkClass}  ${location.pathname === "/Aboutus" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Aboutus', state: { from: location.pathname } }} >HAKKIMIZDA</Link>
+            <Link className={`${linkClass}  ${location.pathname === "/Contact" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Contact', state: { from: location.pathname } }} >İLETİŞİM</Link>
           </div>
           <div className='relative border-b-[1px] border-b-solid border-[#C2B6BB]'>
             <input className=' bg-[#F2E1D9] outline-none text-lg mr-4' placeholder='Search Products'></input>
@@ -59,7 +59,7 @@ export default function Header(props) {
               initial={{ y: 80 }}
               animate={{ y: 0 }}
               transition={{ duration: 1.2 }}
-              onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth' })}}
+              onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }}
               className="cursor-pointer p-4 bg-[#FD8F5F] rounded-full group"
             >
               <FaLevelUpAlt className='text-white' />
@@ -73,10 +73,10 @@ export default function Header(props) {
             {showmenu ? <AiOutlineCloseCircle className='absolute right-10 top-10 ml-8 text-[#231f20]' fontSize={27} onClick={() => { setshowmenu(false) }} /> : null}
             <div className=' w-full flex flex-row justify-around items-center my-4'>
               <div className='hidden lg:flex flex-row justify-center items-center'>
-                <Link className={`${linkClass}  ${location.pathname === "/" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/', state: { from: location.pathname } }}>Home</Link>
-                <Link className={`${linkClass}  ${location.pathname === "/Products" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Products', state: { from: location.pathname } }} >Products</Link>
-                <Link className={`${linkClass}  ${location.pathname === "/Aboutus" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Aboutus', state: { from: location.pathname } }} >Aboutus</Link>
-                <Link className={`${linkClass}  ${location.pathname === "/Contact" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Contact', state: { from: location.pathname } }} >Conctact</Link>
+                <Link className={`${linkClass}  ${location.pathname === "/" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/', state: { from: location.pathname } }}>Anasayfa</Link>
+                <Link className={`${linkClass}  ${location.pathname === "/Products" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Products', state: { from: location.pathname } }} >Ürünler</Link>
+                <Link className={`${linkClass}  ${location.pathname === "/Aboutus" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Aboutus', state: { from: location.pathname } }} >Hakkımızda</Link>
+                <Link className={`${linkClass}  ${location.pathname === "/Contact" ? " text-[#FD8F5F]" : null}`} to={{ pathname: '/Contact', state: { from: location.pathname } }} >İletişim</Link>
               </div>
               <div className='relative border-b-[1px] border-b-solid border-[#C2B6BB]'>
                 <input className=' bg-[#F2E1D9] outline-none text-lg mr-4' placeholder='Search Products'></input>

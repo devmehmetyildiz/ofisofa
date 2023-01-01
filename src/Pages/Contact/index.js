@@ -6,7 +6,7 @@ import Message from './Message'
 export default function index() {
     return (
         <React.Fragment>
-            <Title title={"Contact"} titleurl="/Contact"/>
+            <Title title={"İletişim"} titleurl="/Contact"/>
             <Map />
             <Message />
         </React.Fragment>
