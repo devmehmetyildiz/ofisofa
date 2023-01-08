@@ -37,8 +37,8 @@ export default function Portfolio() {
   ]
 
   return (
-    <div className=' relative w-full flex justify-center items-center bg-[#BED3AB] h-[100vh]'>
-      <img className='absolute object-cover top-0 left-0' src={img.Home_slider} alt="slider" />
+    <div className=' relative w-full flex justify-center items-center bg-[#71A37A] h-[100vh]'>
+      <img className='absolute top-0 left-0 w-[95vw]  h-[95vh] object-cover' src={img.Home_slider} alt="slider" />
       <div className='absolute left-[10%] top-[15%] bg-white w-2/3 lg:w-1/3'>
         <div className='p-[10%] flex flex-col justify-center items-start'>
           <h1 className='text-[#016236]  text-[3.4vmin] font-bold uppercase mb-4'>SİZLER İÇİN</h1>

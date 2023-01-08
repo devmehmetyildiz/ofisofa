@@ -6,7 +6,7 @@ export default [
     {
         category: "Masa Takımı",
         product: 'Artemis masa takımı',
-        info:'açıklama1',
+        info:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
         price:'x TL',
         duration:duration,
         imgs: [
@@ -17,7 +17,7 @@ export default [
     {
         category: "Masa Takımı",
         product: 'Class Masa Takımı',
-        info:'açıklama2',
+        info:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
         price:'x TL',
         duration:duration,
         imgs: [

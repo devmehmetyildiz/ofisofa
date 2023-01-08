@@ -6,6 +6,7 @@ import Home from "./Pages/Home"
 import Products from "./Pages/Products"
 import Aboutus from "./Pages/Aboutus"
 import Contact from "./Pages/Contact"
+import ProductDetail from "./Pages/ProductDetail"
 
 
 
@@ -19,6 +20,7 @@ export function App(props) {
         <Route path='/Products' element={<Products />} />
         <Route path='/Aboutus' element={<Aboutus />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path='/Products/:Name' element={<ProductDetail />} />
       </Routes>
       <Footer />
     </React.Fragment>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import img from '../../Assets/img'
 import { motion } from "framer-motion"
 import products from '../../Assets/products'
+import { Link } from 'react-router-dom'
 
 export default function Popularproducts() {
 
@@ -56,17 +57,19 @@ export default function Popularproducts() {
       <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-[5%] '>
         {products.filter(u => u.category === category).length > 0 ? products.filter(u => u.category === category).map(item => {
           return <div key={Math.random()} className="overflow-hidden">
-            <motion.div
-              initial={{ y: 180, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: item.duration }}
-              className="p-4 flex flex-col justify-center items-center border-[1px] border-solid border-[#F6F8FE]">
-              <img className='h-[250px]' src={item.imgs[0]} alt={item.title} />
-              <h1 className='mt-4 font-bold leading-[1.7]'>{item.product}</h1>
-              <h1 className='mt-4 font-bold leading-[1.7]'>{item.info}</h1>
-              <p className='font-semibold text-red-800 my-4'>${item.price}</p>
-            </motion.div>
+            <Link to={`/Products/${item.product}`}>
+              <motion.div
+                initial={{ y: 180, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: item.duration }}
+                className="p-4 flex flex-col justify-center items-center border-[1px] border-solid border-[#F6F8FE]">
+                <img className='h-[250px]' src={item.imgs[0]} alt={item.title} />
+                <h1 className='mt-4 font-bold leading-[1.7]'>{item.product}</h1>
+                <h1 className='mt-4 font-bold leading-[1.7]'>{item.info}</h1>
+                <p className='font-semibold text-red-800 my-4'>${item.price}</p>
+              </motion.div>
+            </Link>
           </div>
         }) : <div className="w-full text-center flex justify-center items-center"><h1>Ürün Bulunamadı</h1></div>}
       </div>
