@@ -24,7 +24,7 @@ a,
 p,
 span {
   font-family: "Poppins", sans-serif;
-  color: #2d2d2d;
+  color: #06040A;
 }
 
 .button {
@@ -46,7 +46,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #32653B;
+  background-color: #016236;
   z-index: -2;
 }
 
@@ -57,7 +57,7 @@ span {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #1C5727;
+  background-color: #016236;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -69,13 +69,13 @@ span {
 }
 
 .navbarinput::placeholder{
-color: #2d2d2d;
+color: #06040A;
 }
 
 
 
 .titlebg{
-  background-image: url("Assets/img/TitleBg.webp");
+  background-image: url("Assets/img/TitleBg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -89,5 +89,49 @@ color: #2d2d2d;
 .forminput{
   outline: none;
   padding: 4px;
-  color: #4B85555;
+  color: #016236;
+}
+
+
+
+
+.buttonportfolio {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.buttonportfolio:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #016236;
+  z-index: -2;
+}
+
+.buttonportfolio:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #06040A;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.buttonportfolio:hover {
+  color: #fff;
+}
+.buttonportfolio:hover:before {
+  width: 100%;
 }

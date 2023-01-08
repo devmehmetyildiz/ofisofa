@@ -7,7 +7,7 @@ import { CiHome, CiMobile4 } from 'react-icons/ci'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col justify-center items-center w-full bg-[#32653B] py-8 text-white'>
+    <div className='flex flex-col justify-center items-center w-full bg-[#016236] py-8 text-white'>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12'>
         <div className='flex flex-col justify-center items-start w-1/3'>
           <img className='mt-4' src={img.logo} alt="logo" />
@@ -17,7 +17,7 @@ export default function Footer() {
               <AiOutlineTwitter className='text-md  group-hover:-rotate-90 transition-all ease-in-out duration-150 group-hover:text-[#FDFDFD]' />
             </div>
             <div className='cursor-pointer group rounded-full  p-2 border-2 mx-2 text-white border-white'>
-              <FaFacebookF className='text-md  group-hover:-rotate-90 transition-all ease-in-out duration-150 group-hover:text-[#1C5727]' />
+              <FaFacebookF className='text-md  group-hover:-rotate-90 transition-all ease-in-out duration-150 group-hover:text-[#016236]' />
             </div>
           </div>
         </div>

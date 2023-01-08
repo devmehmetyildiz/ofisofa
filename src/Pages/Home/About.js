@@ -5,17 +5,17 @@ import productimages from '../../Assets/productimages'
 
 export default function About() {
   return (
-    <div className='mt-12 flex flex-col lg:flex-row justify-center items-center bg-[#71A37A]'>
+    <div className='mt-12 flex flex-col lg:flex-row justify-center items-center bg-[#BED3AB]'>
       <img src={productimages.informmasatakimshne1} className="w-1/2" alt="home about" />
       <div className='w-full'>
-        <div className='p-8 flex flex-col justify-center items-start w-full lg:w-2/3 text-[#0B3E14]'>
-          <h1 className='font-bold text-[4vmin] text-[#0B3E14]'>
+        <div className='p-8 flex flex-col justify-center items-start w-full lg:w-2/3 text-[#016236]'>
+          <h1 className='font-bold text-[4vmin] text-[#06040A]'>
           VİZYON - MİSYON
           </h1>
-          <p className='mt-8 text-md text-[#0B3E14]'>
+          <p className='mt-8 text-md text-[#06040A]'>
           Birbirinden farklı tasarım, nicelik, boyut, renk ve fiyat çeşitliliğine sahip ürünlerle her türlü tüketiciye hitap eden firmamızın bu esnek ortamı oluşturmasının temel amacı; değişen şartlar ve zaman içerisinde farklılaşabilen ve gelişebilen talep yapısına cevap vermektir. 
           </p>
-          <p className='mt-4 text-md text-[#0B3E14]'>
+          <p className='mt-4 text-md text-[#06040A]'>
           Değişimi, gelişimi ve yeniliği hedefleyerek çağdaş ve özgün tasarımları müşterileriyle buluşturmayı hedeflemektedir.
           </p>
          <Link to={"/Aboutus"}><button className='mt-4 button rounded-lg'>Daha Fazla Öğren</button></Link>

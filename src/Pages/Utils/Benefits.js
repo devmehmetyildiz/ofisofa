@@ -10,31 +10,31 @@ export default function Benefits() {
     {
       icon: <TbTruckDelivery />,
       title: 'Hızlı & Ücretsiz* Dağıtım',
-      info: 'Gaziantep içi ücretsiz dağıtım',
+      info: 'Gaziantep İçi Ücretsiz Dağıtım',
       duration: 0.7
     },
     {
       icon: <MdOutlinePayment />,
       title: 'Taksit Seçenekleri',
-      info: 'Her Banka ile antlaşmalı',
+      info: 'Tüm Bankalarla Anlaşmalı',
       duration: 1.0
     },
     {
       icon: <CiMoneyCheck1 />,
       title: 'Mail Order ile Güvenli Ödeme',
-      info: 'Uzaktan Ödeme İmkanı',
+      info: 'Oturduğunuz Yerden Ödeme İmkânı',
       duration: 1.3
     },
     {
       icon: <BiSupport />,
-      title: '7/24 Destek',
+      title: 'Teslimat Sonrası Hizmet',
       info: 'Her an yanınızdayız',
       duration: 1.6
     },
   ]
 
   return (
-    <div className='mt-12 bg-[#71A37A] '>
+    <div className='mt-12 bg-[#BED3AB] '>
       <div className='py-8 flex flex-col lg:flex-row justify-center items-center gap-10'>
         {benefist.map(item => {
           return <div key={Math.random()} className="overflow-hidden">
@@ -47,7 +47,7 @@ export default function Benefits() {
                 {item.icon}
               </div>
               <h5 className='mt-4 text-lg font-normal'>{item.title}</h5>
-              <p className='text-[#3d3d3d] mt-2 '>{item.info}</p>
+              <p className='text-[#016236] mt-2 '>{item.info}</p>
             </motion.div>
           </div>
         })}
