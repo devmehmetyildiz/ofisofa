@@ -10,7 +10,7 @@ export default function Footer() {
     <div className='flex flex-col justify-center items-center w-full bg-[#016236] py-8 text-white'>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12'>
         <div className='flex flex-col justify-center items-start w-1/3'>
-          <img className='mt-4' src={img.logo} alt="logo" />
+          <img className='mt-4' src={img.logoFooter} alt="logo" />
 
           <div className='flex flex-row justify-center items-center mt-8'>
             <div className='cursor-pointer group rounded-full  p-2 border-2 text-white  mx-2 border-white'>
