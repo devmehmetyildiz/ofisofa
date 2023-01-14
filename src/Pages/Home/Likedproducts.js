@@ -16,7 +16,7 @@ export default function Likedproducts() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className='px-4 font-bold uppercase text-center text-[#06040A] text-4xl'>EN ÇOK SEVİLEN ÜRÜNLER</motion.h1>
+        className='px-4 font-bold uppercase text-center text-[#1c2520] text-4xl'>EN ÇOK SEVİLEN ÜRÜNLER</motion.h1>
       <motion.p
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -36,7 +36,7 @@ export default function Likedproducts() {
               <img className='h-[250px]' src={item.imgs[0]} alt={item.title} />
               <h1 className='mt-4 font-bold leading-[1.7]'>{item.product}</h1>
               <h1 className='mt-4 font-bold leading-[1.7]'>{item.info}</h1>
-              <p className='font-semibold text-red-800 my-4'>${item.price}</p>
+              <p className='font-semibold text-[#144E5A] my-4'>${item.price}</p>
             </motion.div>
           </div>
         })}

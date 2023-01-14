@@ -24,7 +24,7 @@ a,
 p,
 span {
   font-family: "Poppins", sans-serif;
-  color: #06040A;
+  color: #1c2520;
 }
 
 .button {
@@ -46,7 +46,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #016236;
+  background-color: #144E5A;
   z-index: -2;
 }
 
@@ -57,7 +57,7 @@ span {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #016236;
+  background-color: #3F9BB2;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -69,7 +69,7 @@ span {
 }
 
 .navbarinput::placeholder{
-color: #06040A;
+color: #1c2520;
 }
 
 .popup-content {
@@ -93,7 +93,7 @@ color: #06040A;
 .forminput{
   outline: none;
   padding: 4px;
-  color: #016236;
+  color: #144E5A;
 }
 
 
@@ -118,7 +118,7 @@ color: #06040A;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #016236;
+  background-color: #144E5A;
   z-index: -2;
 }
 
@@ -129,7 +129,7 @@ color: #06040A;
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #06040A;
+  background-color: #1c2520;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -159,7 +159,7 @@ color: #06040A;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3d3d3d;
+  background-color: #144E5A;
   z-index: -2;
 }
 
@@ -170,7 +170,7 @@ color: #06040A;
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #1d1d1d;
+  background-color: #3F9BB2;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -194,11 +194,11 @@ color: #06040A;
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #BED3AB; 
+  background: #144E5A; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #32653B; 
+  background: #3F9BB2; 
 }

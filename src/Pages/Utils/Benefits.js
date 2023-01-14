@@ -34,7 +34,7 @@ export default function Benefits() {
   ]
 
   return (
-    <div className='mt-12 bg-[#BED3AB] '>
+    <div className='mt-12 bg-[#3F9BB2] '>
       <div className='py-8 flex flex-col lg:flex-row justify-center items-center gap-10'>
         {benefist.map(item => {
           return <div key={Math.random()} className="overflow-hidden">
@@ -47,7 +47,7 @@ export default function Benefits() {
                 {item.icon}
               </div>
               <h5 className='mt-4 text-lg font-normal'>{item.title}</h5>
-              <p className='text-[#016236] mt-2 '>{item.info}</p>
+              <p className='text-[#1c2520] mt-2 '>{item.info}</p>
             </motion.div>
           </div>
         })}

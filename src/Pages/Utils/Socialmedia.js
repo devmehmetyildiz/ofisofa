@@ -7,11 +7,11 @@ export default function Socialmedia() {
   return (
     <div className='mt-12 flex flex-col lg:flex-row justify-center items-center'>
         <div className=' flex flex-col justify-center items-center lg:items-start p-4'>
-          <AiOutlineInstagram className='text-[#016236] text-5xl' />
-          <h1 className='text-3xl text-[#016236] mt-8 font-bold w-2/3'>
+          <AiOutlineInstagram className='text-[#144E5A] text-5xl' />
+          <h1 className='text-3xl text-[#144E5A] mt-8 font-bold w-2/3'>
             INSTAGRAM 'DA DA BİZİ TAKİP EDİN
           </h1>
-          <p className='mt-4 text-[#06040A]'>
+          <p className='mt-4 text-[#1c2520]'>
             En Güncel Ürünlerimizden ilk siz haberdar olun
           </p>
           <button className='mt-4 button rounded-lg'>Keşfet</button>
