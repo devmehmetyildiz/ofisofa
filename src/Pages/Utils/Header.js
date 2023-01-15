@@ -59,15 +59,15 @@ export default function Header(props) {
       {
         togglemenu ?
           <React.Fragment >
-            <div className='overflow-hidden z-50 fixed right-5 bottom-5  '>
+            <div className='overflow-hidden z-50 fixed right-5 bottom-5 '>
               <motion.div
                 initial={{ y: 80 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1.2 }}
                 onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }}
-                className="cursor-pointer p-4 bg-[#144E5A] rounded-full group"
+                className="border-2 border-[#ffe2c8] cursor-pointer p-4 bg-[#144E5A] rounded-full group"
               >
-                <FaLevelUpAlt className='text-white' />
+                <FaLevelUpAlt className='text-[#ffe2c8]' />
               </motion.div>
             </div>
             <motion.nav
