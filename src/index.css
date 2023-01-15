@@ -46,7 +46,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #144E5A;
+  background-color: #3F9BB2;
   z-index: -2;
 }
 
@@ -57,7 +57,7 @@ span {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #3F9BB2;
+  background-color: #1c2520;
   transition: all 0.3s;
   z-index: -1;
 }

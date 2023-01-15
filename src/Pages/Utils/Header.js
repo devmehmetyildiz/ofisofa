@@ -23,7 +23,7 @@ export default function Header(props) {
 
 
   const toggleNavBar = () => {
-    if (window.scrollY >= 100 || window.innerWidth < 800) {
+    if (window.scrollY >= 150 || window.innerWidth < 800) {
       setTogglemenu(true);
     }
     else {
@@ -47,7 +47,7 @@ export default function Header(props) {
             {
               !showmenu ?
                 <div className=' absolute right-5 top-0 visible lg:hidden'>
-                  <GiHamburgerMenu className='text-[#144E5A]' fontSize={27} onClick={() => { setshowmenu(true) }} />
+                  <GiHamburgerMenu className='text-[#1c2520]' fontSize={27} onClick={() => { setshowmenu(true) }} />
                 </div>
                 : null
             }
@@ -92,7 +92,7 @@ export default function Header(props) {
               {
                 !showmenu ?
                   <div className='visible lg:hidden'>
-                    <GiHamburgerMenu className='text-[#144E5A]' fontSize={27} onClick={() => { setshowmenu(true) }} />
+                    <GiHamburgerMenu className='text-[#1c2520]' fontSize={27} onClick={() => { setshowmenu(true) }} />
                   </div>
                   : null
               }
