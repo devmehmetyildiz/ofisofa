@@ -16,13 +16,13 @@ export default function Likedproducts() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className='px-4 font-bold uppercase text-center text-[#1c2520] text-4xl'>EN ÇOK SEVİLEN ÜRÜNLER</motion.h1>
+        className='px-4 font-bold uppercase text-center text-[#000000] text-4xl'>EN ÇOK SEVİLEN ÜRÜNLER</motion.h1>
       <motion.p
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className='px-4 mt-4 text-center text-[#3D3D3D] font-normal text-lg'>Müşterilerimiz tarafından en beğenilen ürünler</motion.p>
+        className='px-4 mt-4 text-center text-[#3d3d3d] font-normal text-lg'>Müşterilerimiz tarafından en beğenilen ürünler</motion.p>
 
       <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-[5%] '>
         {productshuffled.slice(0, 3).map(item => {
@@ -32,11 +32,11 @@ export default function Likedproducts() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: item.duration }}
-              className="p-4 flex flex-col justify-center items-center border-[1px] border-solid border-[#F6F8FE]">
+              className="p-4 flex flex-col justify-center items-center border-[1px] border-solid border-[#90EE90]">
               <img className='h-[250px]' src={item.imgs[0]} alt={item.title} />
               <h1 className='mt-4 font-bold leading-[1.7]'>{item.product}</h1>
               <h1 className='mt-4 font-bold leading-[1.7]'>{item.info}</h1>
-              <p className='font-semibold text-[#144E5A] my-4'>${item.price}</p>
+              <p className='font-semibold text-[#006400] my-4'>${item.price}</p>
             </motion.div>
           </div>
         })}

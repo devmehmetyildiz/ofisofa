@@ -47,7 +47,7 @@ export default function Popularproducts() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 onClick={() => { setcategory(item) }}
-                className="cursor-pointer py-4 px-8 flex items-center justify-center border-b-2 border-solid border-[#e9ecef #e9ecef #dee2e6] hover:border-[#144E5A]">
+                className="cursor-pointer py-4 px-8 flex items-center justify-center border-b-2 border-solid border-[#e9ecef #e9ecef #dee2e6] hover:border-[#006400]">
                 {item}
               </motion.div>
             </div>
@@ -63,11 +63,11 @@ export default function Popularproducts() {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: item.duration }}
-                className="p-4 flex flex-col justify-center items-center border-[1px] border-solid border-[#F6F8FE]">
+                className="p-4 flex flex-col justify-center items-center border-[1px] border-solid border-[#90EE90]">
                 <img className='h-[250px]' src={item.imgs[0]} alt={item.title} />
                 <h1 className='mt-4 font-bold leading-[1.7]'>{item.product}</h1>
                 <h1 className='mt-4 font-bold leading-[1.7]'>{item.info}</h1>
-                <p className='font-semibold text-[#144E5A] my-4'>${item.price}</p>
+                <p className='font-semibold text-[#006400] my-4'>${item.price}</p>
               </motion.div>
             </Link>
           </div>
